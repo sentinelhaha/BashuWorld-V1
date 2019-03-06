@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
+        "source": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\BashuWorld\\library\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
+        "source": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\BashuWorld\\library\\unspecified\\res\\drawable\\indicator_bg_top.xml"
+    }
+]

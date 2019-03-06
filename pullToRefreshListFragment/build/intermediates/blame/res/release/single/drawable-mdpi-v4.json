@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\exploded-aar\\BashuWorld\\library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\exploded-aar\\BashuWorld\\library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\exploded-aar\\BashuWorld\\library\\unspecified\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+    }
+]

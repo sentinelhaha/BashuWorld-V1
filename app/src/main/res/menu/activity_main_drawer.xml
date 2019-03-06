@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/btn_check_on_disable_holo_dark"
+            android:title="@string/index" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/btn_check_on_disable_holo_dark"
+            android:title="@string/city" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/btn_check_on_disable_holo_dark"
+            android:title="@string/spot" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/btn_check_on_disable_holo_dark"
+            android:title="@string/travel" />
+    </group>
+
+    <item android:title="@string/personal">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/btn_check_on_disable_holo_dark"
+                android:title="@string/personal_information" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/btn_check_on_disable_holo_dark"
+                android:title="@string/personal_travel" />
+        </menu>
+    </item>
+
+</menu>

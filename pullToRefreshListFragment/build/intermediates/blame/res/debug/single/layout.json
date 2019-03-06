@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\debug\\layout\\need_this_for_maven.xml",
+        "source": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\src\\main\\res\\layout\\need_this_for_maven.xml"
+    },
+    {
+        "merged": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\exploded-aar\\BashuWorld\\library\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "C:\\project\\android\\appworkspaces\\BashuWorld\\pullToRefreshListFragment\\build\\intermediates\\exploded-aar\\BashuWorld\\library\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    }
+]
