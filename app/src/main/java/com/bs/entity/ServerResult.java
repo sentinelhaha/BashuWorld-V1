@@ -1,6 +1,8 @@
 package com.bs.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by admin on 2019/3/4.

@@ -3,19 +3,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_index"
             android:icon="@drawable/btn_check_on_disable_holo_dark"
             android:title="@string/index" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_city"
             android:icon="@drawable/btn_check_on_disable_holo_dark"
             android:title="@string/city" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_spot"
             android:icon="@drawable/btn_check_on_disable_holo_dark"
             android:title="@string/spot" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_travel"
             android:icon="@drawable/btn_check_on_disable_holo_dark"
             android:title="@string/travel" />
     </group>

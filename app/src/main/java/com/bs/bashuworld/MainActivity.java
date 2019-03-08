@@ -43,6 +43,10 @@ public class MainActivity extends AppCompatActivity
     Fragment[] fragments = new Fragment[3];
     Button[] buttons = new Button[3];
 
+    Fragment[] navigations=new Fragment[4];
+
+    int currentNavigationIndex=0;
+    int clickNavigationIndex=0;
     int currentFragmentIndex=0;
     int clickBtnIndex=0;
 
@@ -54,7 +58,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+       /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,7 +66,7 @@ public class MainActivity extends AppCompatActivity
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -85,6 +89,13 @@ public class MainActivity extends AppCompatActivity
         fragments[0]=indexFragment;
         fragments[1]=messageFragment;
         fragments[2]=meFragment;
+
+
+        navigations[0]=indexFragment;
+        navigations[1]=messageFragment;
+        navigations[2]=meFragment;
+        navigations[3]=meFragment;
+
 
         buttons[0]= (Button) findViewById(R.id.btn_main_fragment_home1);
         buttons[1]= (Button) findViewById(R.id.btn_main_fragment_message1);
@@ -131,7 +142,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_login) {
+            Toast.makeText(MainActivity.this, "我是小肥猪登录", Toast.LENGTH_SHORT).show();
+            return true;
+        }else if(id==R.id.action_register){
+            Toast.makeText(MainActivity.this, "我是小肥猪注册", Toast.LENGTH_SHORT).show();
             return true;
         }
 
@@ -144,21 +159,58 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        switch (id){
+            case R.id.nav_index:
+                clickNavigationIndex=0;
+                break;
+            case R.id.nav_city:
+                clickNavigationIndex=1;
+                break;
+            case R.id.nav_spot:
+                clickNavigationIndex=2;
+                break;
+            case R.id.nav_travel:
+                clickNavigationIndex=3;
+                break;
+            case R.id.nav_share:
+                break;
+            case R.id.nav_send:
+                 break;
+        }
+       /* if (id == R.id.nav_index) {
+
+
+
             // Handle the camera action
-            /*Toast.makeText(MainActivity.this, "我是小肥猪首页", Toast.LENGTH_SHORT).show();*/
-        } else if (id == R.id.nav_gallery) {
+            *//*Toast.makeText(MainActivity.this, "我是小肥猪首页", Toast.LENGTH_SHORT).show();*//*
+        } else if (id == R.id.nav_city) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_spot) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_travel) {
 
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
-        }
+        }*/
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        Fragment hideFragment1 = navigations[currentNavigationIndex];
+        transaction.hide(hideFragment1);
+        Fragment hideFragment2 = fragments[currentFragmentIndex];
+        transaction.hide(hideFragment2);
 
+        Fragment showFragment = navigations[clickNavigationIndex];
+        if(showFragment.isAdded()==false){
+            transaction.add(R.id.fragment_container,showFragment);
+        }
+        transaction.show(showFragment);
+        transaction.commit();
+            /*buttons[currentFragmentIndex].setSelected(false);*/
+        currentFragmentIndex=0;
+        clickBtnIndex=0;
+        currentNavigationIndex=clickNavigationIndex;
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
